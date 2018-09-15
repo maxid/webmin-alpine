@@ -1,0 +1,43 @@
+index_title=nginx webserver
+index_version=nginx version $1
+index_defserv=Default Host
+
+index_select=Select Servers
+index_status=Status
+index_name=Server Name
+index_addr=Address
+index_port=Port
+index_root=Document Root
+index_url=URL
+index_view=View
+
+opt_select=Select action...
+opt_enable=Enable
+opt_disable=Disable
+opt_delete=Delete
+btn_submit=Update Servers
+
+status_enabled=Enabled
+status_disabled=Disabled
+
+gl_edit=Edit nginx.conf
+gl_proxy=Edit proxy.conf
+gl_details=View nginx details
+
+manual_title=Edit Config File
+manual_header=Use the text box below to manually edit the nginx config file for $1.
+
+nginx_apply=Apply Changes
+nginx_stop=Stop nginx
+nginx_start=Start nginx
+
+#stop_nginx=nginx stopped manually
+stop_epid=Failed to open PID file
+stop_esig=Failed to send SIGTERM to process $1
+
+#start_nginx=nginx started manually
+start_err=Failed to start nginx
+
+test_err=Couldn't test nginx configuration
+
+msg_reload=Notice: Changes may not apply until NginX is reloaded. <a href="reload.cgi?redir=/nginx/">Apply Changes</a>

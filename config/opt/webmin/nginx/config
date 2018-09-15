@@ -1,0 +1,16 @@
+show_order=0
+max_servers=30
+virt_dir=/etc/nginx/sites-available
+virt_name=
+link_dir=/etc/nginx/sites-enabled
+test_config=1
+test_nginx=1
+nginx_dir=/etc/nginx
+nginx_path=/usr/sbin/nginx
+nginx_version=
+start_cmd=1
+stop_cmd=1
+apply_cmd=2
+nginx_conf=/etc/nginx/nginx.conf
+mime_types=/etc/nginx/mime.types
+pid_file=

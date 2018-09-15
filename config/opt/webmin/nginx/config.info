@@ -1,0 +1,22 @@
+line1=Configurable options,11
+show_order=Order virtual servers by,1,0-Server name,1-IP Address
+#max_servers=Maximum number of servers to display,0,5
+
+virt_dir=Directory to add virtual servers to,3,Default (./sites-available)
+virt_name=Filename pattern for virtual servers,3,Default (servername.conf)
+link_dir=Directory to create links in for new virtual servers,3,Default (./sites-enabled)
+
+test_config=Test config file before applying changes?,1,1-Yes,0-No (version 0.7.64 tests this either way)
+test_nginx=Test configuration with command,1,1-Use init.d,0-Use nginx command
+
+line2=System configuration,11
+nginx_dir=nginx server config directory,3,Default (/etc/nginx)
+nginx_path=Path to nginx executable,0
+nginx_version=nginx version,3,Work out automatically
+
+start_cmd=Command to start nginx,10,1-Use init.d,2-Use nginx command
+stop_cmd=Command to stop nginx,10,1-Use init.d,2-Use nginx command
+apply_cmd=Command to apply configuration,1,1-Use init.d reload,2-Use nginx command,-Run stop and start commands
+nginx_conf=Path to nginx.conf,3,Automatic
+mime_types=Path to mime.types,3,Automatic
+pid_file=Path to nginx PID file,3,Work out automatically

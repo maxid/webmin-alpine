@@ -1,0 +1,11 @@
+#!/usr/bin/with-contenv bash
+
+if [ ! -f /tmp/state/33-bind ]; then
+    chown -R root:named /etc/bind /var/cache/bind /var/run/named
+    chmod -R 770 /var/cache/bind /var/run/named
+    chmod -R 750 /etc/bind
+    mkdir -p /tmp/state
+    echo 'Initialization Complete' >/tmp/state/33-bind
+fi
+
+exec /usr/sbin/named -c /etc/bind/named.conf -g -u named

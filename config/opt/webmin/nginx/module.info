@@ -1,0 +1,8 @@
+readonly=1
+syslog=1
+depends=1.500
+name=NginX
+desc=NginX webserver
+longdesc=Configure some of NginX.
+category=servers
+version=0.11
