@@ -1,5 +1,7 @@
 FROM alpine:edge
+
 MAINTAINER maxid <maxid@qq.com>
+LABEL description='Webmin + Bind9 + Nginx: Provide Extensive DNS for local area networks'
 
 # CREDITS
 # https://github.com/smebberson/docker-alpine
