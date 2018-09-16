@@ -31,6 +31,7 @@ docker exec -it webmin /bin/zsh
 * bind latest
 * nginx latest
 * openssl perl perl-net-ssleay apkbuild-cpan expect git openssh rsync pwgen netcat-openbsd bash zsh
+* oh-my-zsh
 
 ## Exposed ports
 * 22
