@@ -2,8 +2,6 @@
 # details.cgi
 # Display list of nginx details
 
-use strict;
-use warnings;
 require './nginx-lib.pl';
 &ReadParse();
 

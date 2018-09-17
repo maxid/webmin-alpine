@@ -3,8 +3,6 @@
 # Common functions for nginx configuration
 
 BEGIN { push(@INC, ".."); };
-use strict;
-use warnings;
 use WebminCore;
 use File::Basename;
 &init_config();
@@ -70,8 +68,8 @@ sub restart_button
 	$args = "redir=".&urlize(&this_url());
 	my @rv;
 	if (&is_nginx_running()) {
-		push(@rv, "<a href=\"reload.cgi?$args\">$text{'nginx_restart'}</a>\n");
 		#push(@rv, "<a href=\"reload.cgi?$args\">$text{'nginx_apply'}</a>\n");
+		push(@rv, "<a href=\"restart.cgi?$args\">$text{'nginx_apply'}</a>\n");
 		#push(@rv, "<a href=\"restart.cgi?$args\">$text{'nginx_restart'}</a>\n");
 		push(@rv, "<a href=\"stop.cgi?$args\">$text{'nginx_stop'}</a>\n");
 	}
