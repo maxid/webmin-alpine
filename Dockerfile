@@ -50,7 +50,8 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repos
 # init config file
 COPY config/nginx.conf /etc/nginx/nginx.conf
 COPY config/opt/webmin/nginx /opt/webmin/nginx
-COPY config/etc/webmin/ /etc/webmin/
+COPY config/etc/webmin/nginx/config /etc/webmin/nginx/config
+COPY config/etc/webmin/bind8/config /etc/webmin/bind8/config
 # root filesystem (S6 config files)
 COPY rootfs /
 

@@ -20,7 +20,7 @@ options {
     // zone-statistics yes; 
     
     // If you want to allow only specific hosts to use the DNS server:
-    allow-query { 127.0.0.1; };
+    allow-query { 127.0.0.1; 192.168/16; 172/24; };
     
     // Specify a list of IPs/masks to allow zone transfers to here.
     //
