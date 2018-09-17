@@ -19,9 +19,9 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repos
     curl -L -s https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-amd64.tar.gz \
     | tar xvzf - -C / && \
 ### Install packages
-    apk add ca-certificates openssl perl perl-net-ssleay apkbuild-cpan expect nginx bind bash git openssh rsync pwgen netcat-openbsd zsh && \
+    apk add ca-certificates openssl perl perl-net-ssleay apkbuild-cpan expect nginx bind bash git openssh rsync pwgen netcat-openbsd zsh
 ### Configure zsh
-    sed -i -e "s/bin\/ash/bin\/zsh/" /etc/passwd && \
+RUN sed -i -e "s/bin\/ash/bin\/zsh/" /etc/passwd && \
 ### Generate Host ssh Keys
     mkdir -p ~root/.ssh && chmod 700 ~root/.ssh/ && \
     echo -e "Port 22\n" >> /etc/ssh/sshd_config && \
