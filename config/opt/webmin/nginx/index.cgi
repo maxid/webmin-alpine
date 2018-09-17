@@ -2,6 +2,8 @@
 # index.cgi
 # Display a list of all virtual servers, and links for various types
 
+use strict;
+use warnings;
 use HTML::Entities;
 require './nginx-lib.pl';
 &ReadParse();

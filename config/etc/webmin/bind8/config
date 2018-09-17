@@ -41,3 +41,4 @@ no_chroot=0
 forwardzonefilename_format=ZONE.hosts
 rndcconf_cmd=rndc-confgen
 zones_file=/etc/bind/named.conf.local
+tmpl_email=

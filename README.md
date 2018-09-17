@@ -35,8 +35,10 @@ docker exec -it webmin /bin/zsh
 
 ## Exposed ports
 * 22
-* 80
 * 53/tcp 53/udp
+* 80
+* 443
+* 953
 * 10000
 
 ## Exposed volumes

@@ -6,7 +6,7 @@ options {
     
     // Configure the IPs to listen on here.
     listen-on    { any; };
-    listen-on-v6 { none; };
+    listen-on-v6 { any; };
 
     // QUERY SOURCE - Useful for caching servers behind a firewall
     // Default: address * port *
@@ -20,7 +20,7 @@ options {
     // zone-statistics yes; 
     
     // If you want to allow only specific hosts to use the DNS server:
-    allow-query { 127.0.0.1; 192.168/16; 172/24; };
+    allow-query { 127.0.0.1; 192.168/16; };
     
     // Specify a list of IPs/masks to allow zone transfers to here.
     //
@@ -60,7 +60,7 @@ options {
     // NOTE: Commented out because specified in each zone/view
     // allow-recursion { clients; servers; lan; };
     //allow-recursion { none; };
-    allow-recursion { 127.0.0.1; 192.168/16; 172/24; };
+    allow-recursion { 127.0.0.1; 192.168/16; };
     
     // If your ISP provided one or more IP addresses for stable 
     // nameservers, you probably want to use them as forwarders.  
@@ -68,6 +68,7 @@ options {
     // the all-0's placeholder.
     
     forwarders {
+        114.114.114.114;
         8.8.8.8;
     	8.8.4.4;
     };

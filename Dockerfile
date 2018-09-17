@@ -50,17 +50,16 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/community" >> /etc/apk/repos
 # init config file
 COPY config/nginx.conf /etc/nginx/nginx.conf
 COPY config/opt/webmin/nginx /opt/webmin/nginx
-COPY config/etc/webmin/nginx/config /etc/webmin/nginx/config
-COPY config/etc/webmin/bind8/config /etc/webmin/bind8/config
+COPY config/etc/webmin /etc/webmin
 # root filesystem (S6 config files)
 COPY rootfs /
 
-RUN chown -R root:bin /opt/webmin/nginx && chown root:bin /etc/webmin/nginx/config && chown root:bin /etc/webmin/bind8/config && \
+RUN chown -R root:bin /opt/webmin/nginx && chown -R root:bin /etc/webmin && \
     chown -R root:named /etc/bind && chown named:named /etc/bind/rndc.key
 
 ENV SHELL /bin/zsh
 
-EXPOSE 22 53/udp 53/tcp 80 10000
+EXPOSE 22 53/udp 53/tcp 80 443 953 10000
 
 VOLUME ["/etc/webmin" , "/var/webmin" , "/etc/bind" , "/var/cache/bind" , "/etc/nginx" , "/var/www/html"]
 

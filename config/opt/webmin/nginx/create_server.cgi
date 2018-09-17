@@ -2,6 +2,8 @@
 # create_server.cgi
 # Create a new virtual host.
 
+use strict;
+use warnings;
 require './nginx-lib.pl';
 &ReadParseMime();
 
