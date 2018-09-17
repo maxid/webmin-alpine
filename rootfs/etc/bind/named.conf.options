@@ -60,7 +60,7 @@ options {
     // NOTE: Commented out because specified in each zone/view
     // allow-recursion { clients; servers; lan; };
     //allow-recursion { none; };
-    allow-recursion { 127.0.0.1; };
+    allow-recursion { 127.0.0.1; 192.168/16; 172/24; };
     
     // If your ISP provided one or more IP addresses for stable 
     // nameservers, you probably want to use them as forwarders.  
