@@ -5,6 +5,8 @@ spawn "/opt/webmin/setup.sh"
 expect "Config file directory " {send "\r"}
 expect "Log file directory " {send "\r"}
 expect "Full path to perl (default /usr/bin/perl):" {send "\r"}
+#expect "Operating system name:" {send "102\r"}
+#expect "Operating system version:" {send "4.9\r"}
 expect "Web server port (default 10000):" {send "\r"}
 expect "Login name (default admin):" {send "root\r"}
 expect "Login password:" {send "root\r"}
