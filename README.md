@@ -1,7 +1,8 @@
 # webmin-alpine
 [![](https://images.microbadger.com/badges/version/livinphp/webmin-alpine.svg)](https://microbadger.com/images/livinphp/webmin-alpine "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/livinphp/webmin-alpine.svg)](https://microbadger.com/images/livinphp/webmin-alpine "Get your own image badge on microbadger.com")
 
-Docker alpine + webmin + bind9 + nginx, Provide Extensive DNS for local area networks
+Docker alpine + webmin(include nginx module) + bind9 + nginx, Provide Extensive DNS for local area networks
+> other solution: [alpine + webmin + bind9] + [kong gateway + kong dashboard], do it yourself
 
 ## Webmin Default Login (https://localhost:10000)
 * __USER__: root
