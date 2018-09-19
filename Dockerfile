@@ -60,7 +60,7 @@ ENV SHELL /bin/zsh
 
 EXPOSE 22 53/udp 53/tcp 80 443 953 10000
 
-VOLUME ["/etc/webmin" , "/var/webmin" , "/etc/bind" , "/var/cache/bind" , "/etc/nginx" , "/var/www/html"]
+VOLUME ["/etc/webmin" , "/etc/webmin/miniserv.conf" , "/var/webmin" , "/etc/bind" , "/var/cache/bind" , "/etc/nginx" , "/var/www/html"]
 
 # S6 init script
 ENTRYPOINT [ "/init" ]

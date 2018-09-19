@@ -44,6 +44,7 @@ docker exec -it webmin /bin/zsh
 
 ## Exposed volumes
 * /etc/webmin
+* /etc/webmin/miniserv.conf
 * /var/webmin
 * /etc/bind
 * /var/cache/bind
